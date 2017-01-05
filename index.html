@@ -24,7 +24,25 @@
 
 				<!-- Header -->
 					<!-- navigation menu -->
-					<div w3-include-html="headerMenu.html"></div>
+					<header id="header" class="alt">
+						<h1><a href="index.html">Marco Carlo Cavalazzi</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="aboutMe.html">About Me</a></li>
+											<li><a href="CV.pdf">Curriculum Vitae</a></li>
+											<li><a href="freeThoughts.html">Free thoughts</a></li>
+											<li><a href="projects.html">Personal Projects</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 				
 				<!-- Banner -->
 					<section id="banner">
@@ -168,8 +186,6 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="http://www.w3schools.com/lib/w3data.js"></script> <!-- used to include parts of the webpage using the w3-include tag -->
-			<script>w3IncludeHTML();</script> <!-- including the HTML web parts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

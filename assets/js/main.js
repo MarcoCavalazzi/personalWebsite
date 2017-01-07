@@ -76,7 +76,7 @@
 					target: $body,
 					visibleClass: 'is-menu-visible'
 				});
-
+        
 		// Header.
 			if (skel.vars.IEVersion < 9)
 				$header.removeClass('alt');

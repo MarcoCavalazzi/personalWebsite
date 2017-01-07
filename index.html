@@ -16,6 +16,12 @@
 		<meta name="author" content="Marco Carlo Cavalazzi" />
 		<meta name="description" content="Marco Carlo Cavalazzi" />
 		<meta name="keywords" content="IT, Computer Science, 3D, Space, Italy, Informatica, Spazio, Italia" />
+        
+        <!--<script src="http://www.w3schools.com/lib/w3data.js"></script>
+         We can use it to include content, but we will need a better way later:
+            <div w3-include-html="content.html"></div>
+            <script>w3IncludeHTML();</script> 
+        -->
 	</head>
 	<body class="landing">
 
@@ -23,26 +29,25 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<!-- navigation menu -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Marco Carlo Cavalazzi</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="aboutMe.html">About Me</a></li>
-											<li><a href="CV.pdf">Curriculum Vitae</a></li>
-											<li><a href="freeThoughts.html">Free thoughts</a></li>
-											<li><a href="projects.html">Personal Projects</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+                <header w3-include-html="headerMenu.html" id="header" class="alt">
+                    <!-- navigation menu -->
+                    <nav id="nav">
+                        <ul>
+                            <li class="special">
+                                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                                <div id="menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="aboutMe.html">About Me</a></li>
+                                        <li><a href="CV.pdf">Curriculum Vitae</a></li>
+                                        <li><a href="freeThoughts.html">Free thoughts</a></li>
+                                        <li><a href="projects.html">Personal Projects</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
 				
 				<!-- Banner -->
 					<section id="banner">
@@ -129,8 +134,8 @@
 									<p>It is not a surprise for laptops to have problems from time to time, but the one I found to be a fine piece of hell is a tight hinge. At the beginning you think that the computer will hold and you only need to apply more strength while opening the lid, but when you not only find difficulties opening your laptop but start to hear some cracking noises from it while moving the lid then you realize your computer is not made of titanium. The problem is that even if the outer part may be in alluminium the small pieces that hold the screws that keep the hinge in place is made in simple, plain, plastic. This means that ...
 									
 									if your hinge is too tight and you don't pay attention to it at one point the plastic supports will brake and you may find yourself in trouble.</p>
-									<p>In order to avoid such consequences I would advise you to send it to the lab to fix it ASAP if possible. Otherwise you may find yourself in my same situation, having to completely open your laptop just to expose that hinge. Then you'll be able to unscrew it a little using a parrot-head plier or similar tool to hold one part of the screw and move the nut with another plier. It is a difficult operation, because, first, it is not easy to unscrew a tight hinge and, second, you do not have much space around it so you may end up breaking some other part while working on the hinge.</p>
-									<p><strong>Summary</strong>: if you feel like the hinges of the computer are too tight do not assume the laptop will last forever anyway. Fix it before it's too late, even if it's hard, or ask somebody else to fix it for you.</p>
+									<p>In order to avoid such consequences I would advise you to send it to the lab to fix it ASAP. Otherwise you may find yourself in my same situation, having to completely open your laptop just to expose that hinge. Then you'll be able to unscrew it a little using a parrot-head plier or similar tool to hold one part of the screw and move the nut with another plier. It is a difficult operation, because, first, it is not easy to unscrew a tight hinge and, second, you do not have much space around it so you may end up breaking some other part while working on the hinge.</p>
+									<p><strong>Summary</strong>: if you feel like the hinges of the computer are too tight do not assume the laptop will last forever anyway. Fix it before it's too late or ask somebody else to fix it for you.</p>
 								</li>
 								<li class="icon fa-code">
 									<h3>[HTML, CSS, JS] Hiding text after 100 words.</h3>
@@ -164,7 +169,7 @@
 							</header>
 							<ul class="actions vertical">
 								<li><a href="CV.pdf" class="button fit special">My CV</a></li>
-								<li><a href="#" class="button fit">Contact Me</a></li>
+								<li><a href="mailto:marcocarlo.cavalazzi@gmail.com?subject=From your website" class="button fit">Contact Me</a></li>
 							</ul>
 						</div>
 					</section>
@@ -172,11 +177,9 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                            <li><a href="linkedin.com/in/marcocavalazzi" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/MarcoCavalazzi" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:marcocarlo.cavalazzi@gmail.com?subject=From your website" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
 							<li>Copyright &copy; Marco Carlo Cavalazzi</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -186,13 +189,14 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-                        <!-- Marco Carlo Cavalazzi's scripts -->
-                        <script src="assets/js/articlesPreview.js"></script>
+                <!-- Marco Carlo Cavalazzi's scripts -->
+                <script src="assets/js/articlesPreview.js"></script>
+    </body>
 </html>

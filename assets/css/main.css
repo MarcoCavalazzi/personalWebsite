@@ -1606,7 +1606,7 @@
         }
 	section#two p.linkMore{ /* Added by Marco Carlo Cavalazzi */
 		margin: 0;
-		float: left;
+		float: right;
 	}
 	section.special, article.special {
 		text-align: center;

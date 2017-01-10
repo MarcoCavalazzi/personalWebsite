@@ -1604,6 +1604,10 @@
             text-align: justify;
             text-justify: inter-word;
         }
+	section#two p.linkMore{ /* Added by Marco Carlo Cavalazzi */
+		margin: 0;
+		float: left;
+	}
 	section.special, article.special {
 		text-align: center;
 	}
@@ -3836,10 +3840,3 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
-
-
-/* Added by: Marco Carlo Cavalazzi */
-body section.wrapper#two p.linkMore{
-	margin: 0;
-	float: left;
-}

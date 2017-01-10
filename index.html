@@ -32,6 +32,11 @@
             <script src="assets/js/main.js"></script>
                 <!-- Marco Carlo Cavalazzi's scripts -->
                 <script src="assets/js/articlesPreview.js"></script>
+                <!-- 2d animated background -->
+                <script src="assets/js/animated background/TweenLite.min.js"></script>
+                <script src="assets/js/animated background/EasePack.min.js"></script>
+                <script src="assets/js/animated background/rAF.js"></script>
+                <script src="assets/js/animated background/demo-1.js"></script>
 	</head>
 	<body class="landing">
 
@@ -62,7 +67,7 @@
 				
 				<!-- Banner -->
 					<section id="banner">
-						<div class="inner">
+                        <div class="inner">
 							<h2>Marco Carlo Cavalazzi</h2>
 							<p>A space enthusiast<br />
 							physics passionate<br />
@@ -73,6 +78,8 @@
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
+                        <canvas id="demo-canvas"></canvas> <!-- used for the 2d animated background -->
+                        <h1>ciao</h1>
 					</section>
                                 
                                 <!-- One -->

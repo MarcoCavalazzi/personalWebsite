@@ -3836,3 +3836,10 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+/* Added by: Marco Carlo Cavalazzi */
+body section.wrapper#two p.linkMore{
+	margin: 0;
+	float: left;
+}

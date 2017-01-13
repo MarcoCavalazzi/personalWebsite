@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
-        target = {x: width/2, y: height/2-50};
+        target = {x: width/2, y: height/2};
 
         largeHeader = document.getElementById('banner');
         largeHeader.style.height = height+'px';

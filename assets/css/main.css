@@ -18,7 +18,7 @@
 		vertical-align: baseline;
 	}
 
-    canvas{display: inline-block;} /* Marco Carlo Cavalazzi */
+    canvas{display: inline-block; width: 100%;} /* Marco Carlo Cavalazzi */
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -1596,20 +1596,26 @@
 	}
 
 /* Section/Article */
+    section{ /* This rule serves only for the ellipsis truncation. */
+        overflow: hidden;
+        position: relative;
+    }
         section#two p{
             /* We want the text to be shown for a max of 5 lines in total. */
             overflow: hidden;
             display: -webkit-box;
-            -webkit-line-clamp: 5;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             
-            text-align: justify;
+            text-align: left;
             text-justify: inter-word;
+            text-overflow: ellipsis;
         }
-	section#two p.linkMore{ /* Added by Marco Carlo Cavalazzi */
-		margin: 0;
-		float: right;
-	}
+        section#two .linkMore{ /* Added by Marco Carlo Cavalazzi */
+            margin: 0;
+            float: right;
+            padding-bottom: 1em;
+        }
 	section.special, article.special {
 		text-align: center;
 	}
@@ -3819,6 +3825,15 @@
 		background-size: cover;
 		padding-top: 0;
 	}
+
+    #page-wrapper #banner .inner{
+        position: absolute;
+        text-align: center;
+        padding: 0 auto;
+        width: 70%;
+        left: 15%;
+        right:15%;
+    }
 
 	body.landing #footer {
 		background-color: rgba(29, 36, 42, 0.9);

@@ -1,7 +1,12 @@
 jQuery(document).ready(function() {
-
+    
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
-
+    
+    width = $(window).width();   // returns width of browser viewport
+    if(width < 720){ // it's a smartphone, so we don't want the special three.js effects.
+        return;
+    }
+    
     // Main
     initHeader();
     initAnimation();
@@ -88,7 +93,7 @@ jQuery(document).ready(function() {
             posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
         }
         target.x = posx;
-        target.y = posy-500;
+        target.y = posy;
     }
 
     function scrollCheck() {

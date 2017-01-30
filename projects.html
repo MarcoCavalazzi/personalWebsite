@@ -21,6 +21,11 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+                <!-- 2d animated background -->
+                <script src="assets/js/animated background/TweenLite.min.js"></script>
+                <script src="assets/js/animated background/EasePack.min.js"></script>
+                <script src="assets/js/animated background/rAF.js"></script>
+                <script src="assets/js/animated background/demo-1.js"></script>
 	</head>
 	<body>
         
@@ -32,27 +37,28 @@
 						<h1><a href="index.html">Marco Carlo Cavalazzi</a></h1>
 						<!-- links to contact me -->
 						<ul class="icons" id="contacts">
-                            <li><a href="linkedin.com/in/marcocavalazzi" class="icon fa-linkedin"   title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-							<li><a href="skype:marcocarlo.c1?call" class="icon fa-skype" title="Skype"><span class="label">Skype</span></a></li>
-							<li><a href="https://plus.google.com/u/0/105313566785153831215" class="icon fa-google-plus" title="Google+"><span class="label">Google+</span></a></li>
-							<li><a href="mailto:marcocarlo.cavalazzi@gmail.com?subject=From your website" class="icon fa-envelope-o"  title="Email"><span class="label">Email</span></a></li>
+                            <li><a target="_blank" href="linkedin.com/in/marcocavalazzi" class="icon fa-linkedin"   title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+							<li><a target="_blank" href="https://github.com/MarcoCavalazzi" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a target="_blank" href="skype:marcocarlo.c1?call" class="icon fa-skype" title="Skype"><span class="label">Skype</span></a></li>
+							<!--<li><a target="_blank" href="https://plus.google.com/u/0/105313566785153831215" class="icon fa-google-plus" title="Google+"><span class="label">Google+</span></a></li>-->
+							<li><a target="_blank" href="mailto:marcocarlo.cavalazzi@gmail.com?subject=From your website" class="icon fa-envelope-o"  title="Email"><span class="label">Email</span></a></li>
 						</ul>
 						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="aboutMe.html">About Me</a></li>
-											<li><a href="CV.pdf">Curriculum Vitae</a></li>
-											<li><a href="freeThoughts.html">Free thoughts</a></li>
-											<li><a href="projects.html">Personal Projects</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
+                        <ul>
+                            <li class="special">
+                                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                                <div id="menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="aboutMe.html">About Me</a></li>
+                                        <li><a href="assets/database/marcocarlocavalazzi-cv-resume.pdf">Curriculum Vitae</a></li>
+                                        <li><a href="freeThoughts.html">Free thoughts</a></li>
+                                        <li><a href="projects.html">Personal Projects</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
 					</header>
 
 				<!-- Main -->
@@ -89,27 +95,33 @@
 				
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/Energy_resized.jpg" alt=""></div><div class="content">
-								<h2>New Energy</h2>
-								<p>In order to move forward as a civilization we need a new kind of renewable energy that allows us to be free of every pollutant. If we could manage to achieve that, through nuclear fusion, harvesting the power of waves, anti-matter or gravity or any other that works, we would start a new Era, where there would be no need to wage war in order to get more fossil fuels or land and the importance of a nation would be determined only be how advanced it is in matter of basic research. Every scientific and field needs man and women to expand its limits and that would be a good motive for a nation to invest in such a goal.
-                                
-                                    Aggiungi alla pagina 3D-printed Ironman's suit's head. Metti il modello della testa 3D che gira con three.js. Non mettere il link per il download. Generator that does not require light nor fuel to run..</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/nasa-spacesuit_resized.jpg" alt=""></div><div class="content">
-								<h2>Space Suit</h2>
-								<p>One of the main problems in space exploration at our point in time is the creation of an environment that allows life in space where radiations cannot enter. A goal in this direction would be the engineering of a new kind of space suit that better protects the astronauts from cosmic radiations.</p>
-								<p><sub>Image curtesy of NASA.</sub></p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/Ironman Mark 39 Starboost Gemini_2.jpg" alt=""></div><div class="content">
-								<h2>The Ironman</h2>
-								<p>Depending on the "New Energy Project", this one aims at building an Ironman's suit able to not only fly but to also bring a man in space, even if for a brief period of time. Brief mainly because of the lack of breathable air, that will have to be carried from the suit and will therefore be limited. In order to extend the reserve...</p>
-							</div>
-						</section>
+						<a href="energy.html">
+                            <section class="spotlight">
+                                <div class="image"><img src="images/Energy_resized.jpg" alt=""></div><div class="content">
+                                    <h2>New Energy</h2>
+                                    <p>In order to move forward as a civilization we need a new kind of renewable energy that allows us to be free of every pollutant. If we could manage to achieve that, through nuclear fusion, harvesting the power of waves, anti-matter or gravity or any other that works, we would start a new Era, where there would be no need to wage war in order to get more fossil fuels or land and the importance of a nation would be determined only be how advanced it is in matter of basic research. Every scientific and field needs man and women to expand its limits and that would be a good motive for a nation to invest in such a goal.
+
+                                        Aggiungi alla pagina 3D-printed Ironman's suit's head. Metti il modello della testa 3D che gira con three.js. Non mettere il link per il download. Generator that does not require light nor fuel to run..</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a href="spacesuit.html">
+                            <section class="spotlight">
+                                <div class="image"><img src="images/nasa-spacesuit_resized.jpg" alt=""></div><div class="content">
+                                    <h2>Space Suit</h2>
+                                    <p>One of the main problems in space exploration at our point in time is the creation of an environment that allows life in space where radiations cannot enter. A goal in this direction would be the engineering of a new kind of space suit that better protects the astronauts from cosmic radiations.</p>
+                                    <p><sub>Image curtesy of NASA.</sub></p>
+                                </div>
+                            </section>
+                        </a>
+                        <a href="ironman.html">
+                            <section class="spotlight">
+                                <div class="image"><img src="images/Ironman Mark 39 Starboost Gemini_2.jpg" alt=""></div><div class="content">
+                                    <h2>The Ironman</h2>
+                                    <p>Depending on the "New Energy Project", this proposal aims at building an Ironman's suit able to not only fly but to also bring a man in space, even if for a brief period of time. Brief mainly because of the lack of breathable air, that will have to be carried from the suit and will therefore be limited. In order to extend the reserve...</p>
+                                </div>
+                            </section>
+                        </a>
 					</section>
 
 				<!-- CTA -->
@@ -117,10 +129,10 @@
 						<div class="inner">
 							<header>
 								<h2>Thanks for visiting</h2>
-								<p>You can check my CV or contact me using the links on the right or at the bottom of the page. Feel free to send me any suggestion regarding the website.</p>
+								<p>You can check my CV or contact me using the links on the right and at the bottom of the page. Feel free to send me any suggestion regarding the website.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="documents/CV.pdf" class="button fit special">My CV</a></li>
+								<li><a target="_blank" href="assets/database/marcocarlocavalazzi-cv-resume.pdf" class="button fit special">My CV</a></li>
 								<li><a href="#" class="button fit">Contact Me</a></li>
 							</ul>
 						</div>
@@ -130,9 +142,10 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-                            <li><a href="linkedin.com/in/marcocavalazzi" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/MarcoCavalazzi" class="icon fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="mailto:marcocarlo.cavalazzi@gmail.com?subject=From your website" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                            <li><a target="_blank" href="linkedin.com/in/marcocavalazzi" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a target="_blank" href="https://github.com/MarcoCavalazzi" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a target="_blank" href="skype:marcocarlo.c1?call" class="icon fa-skype" title="Skype"><span class="label">Skype</span></a></li>
+							<li><a target="_blank" href="mailto:marcocarlo.cavalazzi@gmail.com?subject=From your website" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
 							<li>Copyright &copy; Marco Carlo Cavalazzi</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

@@ -14,13 +14,13 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
         <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+            <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <script src="assets/js/jquery.scrollex.min.js" type="text/javascript"></script>
+            <script src="assets/js/jquery.scrolly.min.js" type="text/javascript"></script>
+            <script src="assets/js/skel.min.js" type="text/javascript"></script>
+			<script src="assets/js/util.js" type="text/javascript"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
         
@@ -66,11 +66,26 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-
-								<h3>Personal Projects</h3>
-								<p>
-								One of the main problems in space exploration at our point in time (2017) is the creation of an environment in space where radiations cannot enter. A goal in this direction would be the engineering of a new kind of space suit that better protects the astronauts from cosmic radiations.
-								</p>
+                                
+								<h3>Spacesuit upgrade project</h3>
+                                People who build spacesuits are surely smart, yet they are asking our help. There is a big problem in space we are facing right now: space (ionizing, GCR etc...) radiation. Life on Earth is protected from the full impact of solar and cosmic radiation by the magnetic fields that surround the Earth and by the Earth’s atmosphere, but as we travel farther from Earth’s protective shields we are exposed to the full radiation spectrum and its damaging effects<sup>1</sup>.<br/>
+                                
+                                Scientists already figured out some ways to better protect our astronauts from space radiations. The ideas that won <a href="https://www.nasa.gov/audience/foreducators/topnav/materials/listbytype/Space_Faring_Radiation.html" target="_blank">NASA's competition</a> were:
+                                The winners of the radiation challenge's first round are:
+                                <ol>
+                                    <li>1st place ($5,000): George Hitt, assistant professor of physics and nuclear engineering at Khalifa University, United Arab Emirates, for proposing a reusable shield that could be placed in an orbit between Earth and Mars.</li>
+                                    <li>2nd Place ($3,000): Ian Gallon, retired researcher in electromagnetics of Bridport, England. He provided mathematical calculations for an active radiation mitigation system. </li>
+                                    <li>3rd Place ($2,000): Olivier Loido, freelance engineer of Toulouse, France. He proposed a launch configuration and a magnet array deployment.</li>
+                                    <li>4th Place ($1,000 each): Markus Novak, recent graduate from Ohio State University of Dublin, Ohio, who found safe areas for travel after performing particle trajectory simulations. Also, Mikhail Petrichenkov of Russia, who described how operations could work using a NASA storm shelter.</li>
+                                </ol>
+                                
+                                In order to conquer space we need a way to shield ourselves and our surroundings from radiation. To do so we could generate our own electromagnetic field. A magnetic field strong enough to protect us and controlled enough to not harm us. I'm pretty sure that we can find a way to control it in little time. What we don't have is a way to generate that strong field. To do so we need to be able to produce an incredible amount of energy. Now, it is true that we could generate energy on Earth and then send it through lasers or something similar in space, but this approach would impose a huge losses in the transfer. What we need is a generator that works well in space and that produces enough energy to generate that field. 
+                                If successful, we could install a portable version of the generator on the space suits and allow EVA (Extra-Vehicular Activity) without having to worry all the time about radiations and focus on the job to do. <br/>
+                                A new constraint for the new energy source is set then:<br/>
+                                <ul>
+                                    <li>the new generator has to work both on Earth and in space: because we are about to become a multi-planetary specie.</li>
+                                </ul>
+                                [1] <a href="https://www.nasa.gov/pdf/284273main_Radiation_HS_Mod1.pdf" target="_blank">NASA website</a> (<a href="assets/database/Radiation_HS_Mod1.pdf" target="_blank">saved PDF</a>) - <a href="http://www.space.com/21353-space-radiation-mars-mission-threat.html" target="_blank"> space.com</a><br/>
                                 
 							</div>
 						</section>
@@ -80,7 +95,8 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
                         <section class="spotlight">
-                            <div class="image"><img src="images/nasa-spacesuit_resized.jpg" alt=""></div><div class="content">
+                            <div class="image"><img src="images/nasa-spacesuit_resized.jpg" alt=""></div>
+                            <div class="content">
                                 <p><sub>Image curtesy of NASA.</sub></p>
                             </div>
                         </section>

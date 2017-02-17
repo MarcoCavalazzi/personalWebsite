@@ -40,10 +40,12 @@ $( document ).ready(function() {
 
 function normalizeMyArticles( xmlSourceFile, numWords, sectionID ){
     maxWords = numWords;    // in case the function is called from outside we want to update the stored global variable to have a consistent behaviour in the displayMyArticles() function.
-    // ***** var xmlFile = ajax call for xml file from the server;
+    // can we set up the website on github to download only the main files and later make an ajax call for xml file (or any other document) from the server only if needed?
+    var xmlFile = loadXMLDoc("file:///"+xmlSourceFile);
+    console.log(xmlFile);
     
     
-    displayMyArticles( maxWords, sectionID );
+    //displayMyArticles( maxWords, sectionID );
 }
 
 function displayMyArticles( maxWords, sectionID ){

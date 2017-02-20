@@ -4,7 +4,7 @@ my personal website
 
 
 
----Dal progettino di CodeSchool:
+---Notes from CodeSchool:
 # Hello Code School
 
 This is a sample project to test out how projects work at Code School. For this project, you'll be creating a basic website using HTML. If you want to deploy it to a real website, we'll even walkthrough how to do that!

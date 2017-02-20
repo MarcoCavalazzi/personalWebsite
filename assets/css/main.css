@@ -3835,7 +3835,7 @@
         z-index: 999;
         background-color: #3e364e;  /* same as the background of the gif image */
     }
-    body.landing #loader p{ text-align: center; margin-top:10%; }
+    body.landing #loader p{ text-align: center; margin-top:15%; }
     body.landing #loader p img{ width: 50%; height: 50%; }
 
 	body.landing #page-wrapper {

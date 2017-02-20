@@ -17,11 +17,7 @@
 
 	$(function () {
         
-        // Remove the loader gif
-        $("div#loader").remove();
-        console.log("loader removed");
-        
-		var	$window = $(window),
+        var	$window = $(window),
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
 			$banner = $('#banner'),
@@ -32,7 +28,8 @@
 
 			$window.on('load', function() {
 				window.setTimeout(function() {
-					$body.removeClass('is-loading');
+					$("div#loader").remove();  /* removing the loader gif */
+                    $body.removeClass('is-loading');
 				}, 100);
 			});
 

@@ -3833,7 +3833,7 @@
         width: 100%;
         height: 100%;
         z-index: 99999;
-        background-color: #3e364e;  /* same as the background of the gif image */
+        background-color: #2e3842; /* old value: #3e364e;  /* same as the background of the gif image */
     }
     body.landing #loader p{ text-align: center; margin-top:15%; }
     body.landing #loader p img{ width: 50%; height: 50%; }

@@ -28,7 +28,7 @@
 
 			$window.on('load', function() {
 				window.setTimeout(function() {
-					/*$("div#loader").remove();  /* removing the loader gif */
+					$("div#loader").remove();  /* removing the loader gif */
                     $body.removeClass('is-loading');
 				}, 100);
 			});

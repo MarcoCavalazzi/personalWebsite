@@ -3833,10 +3833,19 @@
         width: 100%;
         height: 100%;
         z-index: 99999;
-        background-color: #2e3842; /* old value: #3e364e;  /* same as the background of the gif image */
+        background-color: #2e3842;
     }
-    body.landing #loader p{ text-align: center; margin-top:15%; }
-    body.landing #loader p img{ width: 50%; height: 50%; }
+    body.landing #loader p{ text-align: center; }
+    @media screen and (max-width:700px){
+        body.landing #loader p img{ width: 70%; height: 70%; }
+    }
+    @media screen and (min-width:701px){
+        body.landing #loader p img{ width: 50%; height: 50%; }
+    }
+    @media screen and (min-width:935px){
+        body.landing #loader p img{ width: 35%; height: 35%; }
+    }
+    body.landing #loader p.loading_gif_subtitle{color: #fdc75f;}
 
 	body.landing #page-wrapper {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");

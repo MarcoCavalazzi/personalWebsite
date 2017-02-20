@@ -3665,16 +3665,30 @@
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
+		
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
 	}
+    
+    @media (max-width:700px){
+        #main > header{
+            background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe - Copy small screen.jpg");
+            background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe - Copy small screen.jpg");
+            background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe - Copy small screen.jpg");
+            background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe - Copy small screen.jpg");
+        }
+    }
+    @media (min-width:701px){
+        #main > header{
+            background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
+            background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
+            background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
+            background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("../../images/Main Background - Universe.jpg");
+        }
+    }
 
 		#main > header h2 {
 			font-size: 1.75em;

@@ -16,7 +16,11 @@
 		});
 
 	$(function () {
-
+        
+        // Remove the loader gif
+        $("div#loader").remove();
+        console.log("loader removed");
+        
 		var	$window = $(window),
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),

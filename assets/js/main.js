@@ -28,7 +28,7 @@
 
 			$window.on('load', function() {
 				window.setTimeout(function() {
-					window.scrollTo(0, 0); /* JS: Go back up to the beginning of the page (in case the user scrolled down while the page was loading) */
+					window.scroll(0, 0); /* JS: Go back up to the beginning of the page (in case the user scrolled down while the page was loading) */
 					$("div#loader").remove();  /* removing the loader gif */
                     $body.removeClass('is-loading');
 				}, 100);
